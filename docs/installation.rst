@@ -8,7 +8,7 @@ Installation
 Requirements
 ------------
 
-- Minimum Python version:  3.6
+- Minimum Python version:  3.7
 - Recommended Python version: 3.7.5 or later
 
 - Dependent libraries: requests, py7zr, semantic_version, patch, texttable, bs4
