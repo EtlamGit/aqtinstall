@@ -151,14 +151,14 @@ commands =
     python -m pytest -vv
 
 [testenv:check]
-basepython = python3.8
+basepython = python3.9
 extras = check
 commands =
     check-manifest {toxinidir}
     flake8 aqt tests
 
 [testenv:docs]
-basepython = python3.8
+basepython = python3.9
 extras = docs
 commands =
     sphinx-build {posargs:-E} -W -b html docs build/docs
@@ -177,7 +177,7 @@ deps =
     pytest-cov
 
 [testenv:mprof]
-basepython = python3.8
+basepython = python3.9
 commands =
     mprof run --multiprocess python -m aqt install-qt -O /tmp -d /tmp linux desktop 6.2.1
     mprof plot --output memory-profile.png
@@ -186,7 +186,7 @@ deps =
     matplotlib
 
 [testenv:fil]
-basepython = python3.8
+basepython = python3.9
 commands =
     fil-profile run -m aqt install-qt -O /tmp -d /tmp linux desktop 6.2.1
 deps =
